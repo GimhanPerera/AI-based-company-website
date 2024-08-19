@@ -1,11 +1,16 @@
 import {
+  aiModelService,
+  apiService,
   benefitIcon1,
   benefitIcon2,
   benefitIcon3,
   benefitIcon4,
   benefitIcon5,
   benefitIcon6,
-  gradientRB
+  communityService,
+  gradientRB,
+  planningService,
+  Service247
 } from "../assets";
 
 export const navigation = [
@@ -32,13 +37,13 @@ export const navigation = [
   {
     id: "4",
     title: "New account",
-    url: "#signup",
+    url: "#",
     onlyMobile: true,
   },
   {
     id: "5",
     title: "Sign in",
-    url: "#login",
+    url: "#",
     onlyMobile: true,
   },
 ];
@@ -142,35 +147,35 @@ export const services = [
     id: "0",
     title: "+10 pre-built AI models",
     text: "Lorem ipsum dolor sit amet pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit.",
-    imageUrl: gradientRB,
+    imageUrl: aiModelService,
     link: "#",
   },
   {
     id: "1",
     title: "API support",
     text: "Lorem ipsum dolor sit amet pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit.",
-    imageUrl: gradientRB,
+    imageUrl: apiService,
     link: "#",
   },
   {
     id: "2",
     title: "Customize your plan",
     text: "Lorem ipsum dolor sit amet pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit.",
-    imageUrl: gradientRB,
+    imageUrl: planningService,
     link: "#",
   },
   {
     id: "3",
     title: "24/7 customer service",
     text: "Lorem ipsum dolor sit amet pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit.",
-    imageUrl: gradientRB,
+    imageUrl: Service247,
     link: "#",
   },
   {
     id: "4",
     title: "Community support",
     text: "Lorem ipsum dolor sit amet pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit.",
-    imageUrl: gradientRB,
+    imageUrl: communityService,
     link: "#",
   },
 ];
