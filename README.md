@@ -1,4 +1,4 @@
-# GimCraft Frontend website
+# GimCraft website
 
 ## About GimCraft
 
