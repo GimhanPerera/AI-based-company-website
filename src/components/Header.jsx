@@ -9,7 +9,7 @@ import Button from "./Button";
 import { HamburgerMenu } from "./design/Header";
 
 const Header = () => {
-  const pathname = useLocation();
+  const {pathname} = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
 
   const toggleNavigation = () => {
@@ -38,7 +38,7 @@ const Header = () => {
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
         <a className="w-[12rem] xl:mr-8 flex flex-row" href="/">
           <img src={gimcraft} width={90} height={90} alt="Gimcraft" />
-          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">GimCraft</span>
+          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">GimCraft</span>
         </a>
 
         <nav
@@ -77,14 +77,15 @@ const Header = () => {
         <Button className="hidden lg:flex" href="#login">
           Sign in
         </Button>
-        
+        <div className="ml-auto"
+          onClick={toggleNavigation}>
         <Button
           className="ml-auto lg:hidden"
           px="px-3"
-          onClick={toggleNavigation}
         >
           <MenuSvg openNavigation={openNavigation} />
         </Button>
+        </div>
       </div>
     </div>
   );
