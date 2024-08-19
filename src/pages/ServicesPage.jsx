@@ -6,7 +6,7 @@ import { services } from '../constants'
 const ServicesPage = () => {
   return (
     <>
-      <Heading title="Our Services" className='pt-16' text="Explore our new products" />
+      <Heading title="Our Services" className='pt-16 text-center' text="Explore our new products" />
       <section className="bg-gray-2 pb-10 pt-3 dark:bg-dark lg:pb-20 lg:pt-[30px]">
         <div className="container">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -20,6 +20,8 @@ const ServicesPage = () => {
             />
           ))}
           </div>
+        
+
         </div>
       </section>
     </>

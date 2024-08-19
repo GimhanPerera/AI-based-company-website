@@ -7,13 +7,14 @@ import Heading from '../components/Heading'
 const ContactUsPage = () => {
   return (
     <>
-      <Heading className='pt-16' title="Contact Us" />
+      <Heading className='pt-24 pb-3 text-center' title="Contact Us" />
       <div className='w-[390px] mx-auto -mt-[30px] mb-[30px]'>
         <GradientCard className={""} containerClassName={""}>
           <ContactForm />
         </GradientCard>
       </div>
       <ContactInfoCard />
+      
 
     </>
   )

@@ -5,6 +5,7 @@ import Gallery from '../components/Gallery'
 import Hero from '../components/Hero'
 import Information from '../components/Information'
 import Pricing from '../components/Pricing'
+import SliderSection from '../components/SliderSection'
 
 
 const HomePage = () => {
@@ -26,6 +27,7 @@ const HomePage = () => {
                 </>
             </Information>
             <Benefits />
+            <SliderSection />
             <Gallery img1={galleryimg1} img2={galleryimg2} img3={galleryimg3}/>
             <Pricing />
         </>
