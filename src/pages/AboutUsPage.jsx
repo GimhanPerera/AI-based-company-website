@@ -4,7 +4,7 @@ import Heading from '../components/Heading'
 const AboutUsPage = () => {
     return (
         <>
-            <Heading className='pt-16' title="About Us" />
+            <Heading className='pt-24 text-center' title="About Us" />
         </>
     )
 }

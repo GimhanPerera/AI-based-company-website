@@ -7,6 +7,11 @@ import {
   benefitIcon4,
   benefitIcon5,
   benefitIcon6,
+  client1,
+  client2,
+  client3,
+  client4,
+  client5,
   communityService,
   gradientRB,
   planningService,
@@ -177,5 +182,38 @@ export const services = [
     text: "Lorem ipsum dolor sit amet pretium consectetur adipiscing elit. Lorem consectetur adipiscing elit.",
     imageUrl: communityService,
     link: "#",
+  },
+];
+
+export const customers = [
+  {
+    id: "0",
+    title: "Gimhan Perera",
+    text: "GimCraft’s custom payment plans made it easy for us to scale our usage as our business grew. Exceptional service and incredible images!",
+    imageUrl: client1,
+  },
+  {
+    id: "1",
+    title: "Nuwan Aluthgama",
+    text: "The variety of AI models available is impressive! I found exactly what I needed to bring my project to life. GimCraft is a game-changer.",
+    imageUrl: client2,
+  },
+  {
+    id: "2",
+    title: "Kasun Kumara",
+    text: "As a developer, the API integration was seamless, and the image quality is top-notch. GimCraft is now an essential part of our workflow.",
+    imageUrl: client3,
+  },
+  {
+    id: "3",
+    title: "Lalith Perera",
+    text: "GimCraft has completely transformed the way we approach design. The AI-generated images are stunning and saved us so much time. Highly recommend!",
+    imageUrl: client4,
+  },
+  {
+    id: "4",
+    title: "Dinesh Gunawardana",
+    text: "The community support is outstanding! I received valuable insights and inspiration from other creators using GimCraft. Truly a one-of-a-kind platform.",
+    imageUrl: client5,
   },
 ];

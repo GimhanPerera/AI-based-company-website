@@ -1,5 +1,5 @@
+import { background2 } from "../assets";
 import Arrow from "../assets/svg/Arrow";
-import ClipPath from "../assets/svg/ClipPath";
 import { benefits } from "../constants";
 import Heading from "./Heading";
 import Section from "./Section";
@@ -13,7 +13,7 @@ const Benefits = () => {
           title="Give a life to your Imagination"
         />
 
-        <div className="flex flex-wrap gap-10 mb-5">
+        <div className="flex flex-wrap gap-10 mb-5 ">
           {benefits.map((item) => (
             <div
               className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem] border-2 border-neutral-300 rounded-2xl"
@@ -23,13 +23,13 @@ const Benefits = () => {
               key={item.id}
             >
               <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
-              <img
-                    src={item.iconUrl}
-                    width={60}
-                    height={60}
-                    className="mb-3"
-                    alt={item.title}
-                  />
+                <img
+                  src={item.iconUrl}
+                  width={60}
+                  height={60}
+                  className="mb-3"
+                  alt={item.title}
+                />
                 <h5 className="h5 mb-3">{item.title}</h5>
                 <p className="body-2 mb-6 text-n-3">{item.text}</p>
                 <div className="flex items-center mt-auto">
@@ -41,8 +41,7 @@ const Benefits = () => {
               </div>
 
               <div
-                className="absolute inset-0.5 bg-n-8"
-                style={{ clipPath: "url(#benefits)" }}
+                className="absolute inset-0.5 bg-n-8 rounded-2xl"
               >
                 <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10">
                   {item.imageUrl && (
@@ -56,12 +55,20 @@ const Benefits = () => {
                   )}
                 </div>
               </div>
-
-              <ClipPath />
             </div>
           ))}
         </div>
       </div>
+      {/* Background */}
+      <div className="absolute top-[23rem] w-[170%] right-1 sm:w-[120%]">
+            <img
+              src={background2}
+              className="w-full"
+              width={1440}
+              height={1800}
+              alt="hero"
+            />
+          </div>
     </Section>
   );
 };

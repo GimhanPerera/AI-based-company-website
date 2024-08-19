@@ -17,6 +17,10 @@
   scroll-behavior: smooth;
 }
 
+.slick-slide > div {
+  margin: 0 10px;
+}
+
 @layer base {
   body {
     @apply font-sans bg-n-8 text-n-1 text-base;
